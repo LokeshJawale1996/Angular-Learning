@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { CourseCardComponent } from './course-card/course-card.component';
 import { NgForDemoComponent } from './directive/ng-for-demo/ng-for-demo.component';
 import { NgIfDemoComponent } from './directive/ng-if-demo/ng-if-demo.component';
+import { NgClassStyleDemoComponent } from './directive/ng-class-style-demo/ng-class-style-demo.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { NgIfDemoComponent } from './directive/ng-if-demo/ng-if-demo.component';
     CourseCardComponent,
     NgForDemoComponent,
     NgIfDemoComponent,
+    NgClassStyleDemoComponent,
    
   ],
   imports: [

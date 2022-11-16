@@ -1,4 +1,4 @@
-<div class="course-card" *ngIf="course" [ngClass]='cardClasses()'>
+<div class="course-card" *ngIf="course" [ngClass]="cardClasses()">
   <div class="course-title" [ngStyle]="titleStyles()">
     {{ cardIndex + " " + course.description }}
   </div>
@@ -11,7 +11,13 @@
   <ng-template #noImage>
     <p>No image is available</p>
   </ng-template>
-  <div class="course-description" [ngStyle]="{'color':'gray'}">
+  <div class="course-description" [ngStyle]="{ color: 'gray' }">
+    <div class="course-category" [ngSwitch]="course.category">
+      <div class="category" *ngSwitchCase="'BEGINNER'">beginner</div>
+      <div class="category" *ngSwitchCase="'INTERMEDIATE'">intermediate</div>
+      <div class="category" *ngSwitchCase="'ADVANCED'">advanced</div>
+      <div class="category" *ngSwitchDefault="'All Levels'">beginner</div>
+    </div>
     {{ course.longDescription }}
   </div>
   <button class="btn btn-primary" (click)="onCourseViewd()">View Course</button>

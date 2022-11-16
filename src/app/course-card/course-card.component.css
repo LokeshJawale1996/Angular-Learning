@@ -44,3 +44,18 @@
 .course-card.beginner{
   background: lightsalmon;
 }
+.course-category{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.category{
+  border:1px solid gray;
+  background-color: rgb(219, 234, 244);
+  padding: 2px;
+  width: 100px;
+  color: black;
+  border-radius: 10px;
+}

@@ -1,0 +1,11 @@
+<div>
+    <h1 [ngClass]="'heading'">Hello</h1>
+    <ul [ngClass]="applyClass()">
+        <li *ngFor="let fruit of fruits">{{fruit}}</li>
+    </ul>
+    <ul [ngStyle]="applyStyle()">
+        <li *ngFor="let animal of animals">{{animal}}</li>
+    </ul>
+    <p [ngStyle]="{'color':'violet','border-top':'1px solid red'}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum doloribus laboriosam, quod, maiores quibusdam voluptates saepe qui nobis voluptatem ad laborum praesentium deserunt animi aut necessitatibus, sequi at? Laboriosam, earum.</p>
+</div>
+
