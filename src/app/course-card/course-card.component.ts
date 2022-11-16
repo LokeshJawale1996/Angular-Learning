@@ -29,5 +29,15 @@ this.courseSelected.emit(this.course);
   isImageAvailable(){
     return this.course && this.course.iconUrl;
   }
+  cardClasses(){
+    return {
+      'beginner':this.course?.category=='BEGINNER',
+    }
+  }
+  titleStyles(){
+    return {
+      'text-decoration':'underline'
+    }
+  }
 
 }

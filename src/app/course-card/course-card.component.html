@@ -1,20 +1,18 @@
-
-  
- 
-    <div class="course-card" *ngIf="course">
-      <div class="course-title">
-       {{cardIndex + ' ' + course.description}}
-      </div>
-      <img width="300" [src]="course.iconUrl" *ngIf="isImageAvailable();else noImage"
-      alt="angular logo"
-      >
-      <ng-template #noImage>
-        <p>No image is available</p>
-      </ng-template>
-      <div class="course-description">
-        {{course.longDescription}}
-      </div>
-      <button class="btn btn-primary" (click)="onCourseViewd()">View Course</button>
-    </div>
-  
-  
+<div class="course-card" *ngIf="course" [ngClass]='cardClasses()'>
+  <div class="course-title" [ngStyle]="titleStyles()">
+    {{ cardIndex + " " + course.description }}
+  </div>
+  <img
+    width="300"
+    [src]="course.iconUrl"
+    *ngIf="isImageAvailable(); else noImage"
+    alt="angular logo"
+  />
+  <ng-template #noImage>
+    <p>No image is available</p>
+  </ng-template>
+  <div class="course-description" [ngStyle]="{'color':'gray'}">
+    {{ course.longDescription }}
+  </div>
+  <button class="btn btn-primary" (click)="onCourseViewd()">View Course</button>
+</div>

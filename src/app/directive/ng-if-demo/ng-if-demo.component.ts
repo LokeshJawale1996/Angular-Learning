@@ -11,5 +11,7 @@ export class NgIfDemoComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+executeSomething(){
+  alert("Hello")
+}
 }

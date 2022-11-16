@@ -1,1 +1,16 @@
-<p>ng-if-demo works!</p>
+<div>
+    <div *ngIf="false; else elseBlock">
+        Content to render when condition is true.
+      </div>
+      <ng-template #elseBlock>
+        Content to render when condition is false.
+      </ng-template>
+    
+      <div *ngIf="true; else elseBlock">
+        condition is true.
+      </div>
+      <ng-template #elseBlock>
+       condition is false.
+      </ng-template>
+    
+</div>
