@@ -1,0 +1,29 @@
+<div class="container">
+    <h1>PIPES</h1>
+    <!-- date pipe -->
+    <div>Start Date: {{startDate | date: 'MM/dd/yyyy' }}</div>
+
+    <!-- uppercase,lowercase & titlecase pipe  -->
+    <div>{{title | uppercase}}</div>
+    <div>{{title | lowercase}}</div>
+    <div>{{title | titlecase}}</div>
+
+    <!-- number -->
+    <div>{{price | number: '3.3-5'}}</div>
+    <div>{{price1 | number : '4.3-6'}}</div>
+
+    <!--currency  -->
+    <div>{{price | currency: "INR"}}</div>
+    <div>{{price | currency: "EUR"}}</div>
+    <!--percent  -->
+    <div>{{rate | percent }}</div>
+    
+    <!-- slice -->
+    <div>
+        <p *ngFor="let employees of employeeListOfNames | slice:0:4 ">{{employees}}</p>
+
+    </div>
+    
+    <!-- Keyvalue -->
+
+</div>

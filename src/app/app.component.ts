@@ -8,10 +8,13 @@ import { Course } from './model/course';
 })
 export class AppComponent {
   title = 'angular-course';
- courses=COURSES;
-  coreCourse = COURSES[0];
-  rxjsCourse = COURSES[1];
-  ngrxCourse = COURSES[2];
+  courses=COURSES;
+
+   startDate = new Date(2000,0,1);
+   
+  // coreCourse = COURSES[0];
+  // rxjsCourse = COURSES[1];
+  // ngrxCourse = COURSES[2];
 
   onCourseSelected(course:Course){
   console.log("App component- click event bubbled...",course)

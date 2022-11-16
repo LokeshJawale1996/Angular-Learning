@@ -5,12 +5,17 @@
   />
 </div>
 
-
+<div class="demo">
+  <div>Start Date: {{startDate | date:'MM/dd/yyyy'}}</div>
+  <!-- pipe date -->
+</div>
 <!-- <app-ng-for-demo></app-ng-for-demo> -->
 <!-- <app-ng-if-demo></app-ng-if-demo> -->
 <!-- <app-ng-class-style-demo></app-ng-class-style-demo> -->
 
-<div class="courses">
+<!-- <div class="courses">
   <app-course-card *ngFor="let course of courses;index as i" (courseSelected)="onCourseSelected($event)" [course]="course" [cardIndex]="i+1"></app-course-card>
-</div>
+</div> -->
 
+<!-- pipe -->
+<app-pipe></app-pipe>
